@@ -1,0 +1,196 @@
+body{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    background-image: url("logo.jpg");
+    padding-top: 3%;
+    background-position: 15% 23%;
+}
+
+h1{
+    font-size: 3em;
+    color: darkslategray;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 2%;
+    margin: 0;
+    text-shadow: 0px 0px 10px white;
+}
+
+h2{
+    font-size: 2em;
+    color: darkslategray;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 3%;
+    margin: 0;
+    text-shadow: 0px 0px 10px white;
+}
+
+#font_size_changer {
+    position: fixed;
+    left: 85%;
+    bottom: 3%%;
+    width: 100%;
+    padding: 0 0;
+    color: darkslategray;
+    text-shadow: 0px 0px 30px white;
+}
+
+div#font_size_changer > p{
+    color: darkslategray;
+    font-size: 1em;
+}
+
+#plus, #minus{
+    color: darkslategray;
+    background-color: ivory;
+    font-size: large;
+    width: 6%;
+    border: 2px solid darkcyan;
+    transition: all 0.3s ease-in-out;
+}
+
+nav{
+    width: 100%;
+    padding-bottom: 1%;
+    padding-top: 4%;
+
+}
+
+ul#top_nav{
+    width: 100%;
+    text-align: center;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+ul#top_nav > li{
+    font-size: 1em;
+    width: 10%;
+    list-style-type: none;
+    display: inline-block;
+}
+
+ul#top_nav a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 0px 10px darkslategray;
+
+}
+
+main{
+    background-color: ivory;
+    color: darkslategray;
+    //margin: 0 auto;
+    padding: 3% 20%;
+}
+
+#left_div{
+    float: left;
+    width: 70%;
+}
+
+#right_div{
+    width: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+footer{
+    width: 100%;
+    background: cornsilk;
+    color: darkcyan;
+    text-align: center;
+    padding: 5% 0 0 0;
+}
+
+#left_div_footer{
+    float: left;
+    width: 50%;
+    font-size: 2em;
+    padding-top: 10%;
+}
+
+div#left_div_footer a {
+    text-decoration: none;
+    color: darkslategray;
+}
+
+#right_div_footer{
+    width: 100%;
+}
+
+label{
+    display: block;
+    text-align: left;
+}
+
+input{
+    display: block;
+    font-size: 0.8em;
+    color: darkcyan;
+    background: none;
+    border: none;
+    padding-top: 1%;
+    border-bottom: 2px solid darkcyan;
+    margin-bottom: 4%;
+    width: 30%;
+}
+
+textarea{
+    display: block;
+    font-size: 0.8em;
+    color: darkcyan;
+    background: none;
+    border: 2px solid darkcyan;
+    padding: 3%;
+    margin: 5% 0 2% 0;
+    min-height: 10%;
+    width: 24%;
+    border-bottom: 1px solid darkcyan;
+}
+
+textarea::placeholder{
+    color: darkcyan;
+}
+
+#send{
+    color: darkcyan;
+    background: none;
+    font-size: 0.8em;
+    width: 11%;
+    height: 2em;
+    margin-left: 11%;
+    border: 2px solid darkcyan;
+    transition: all 0.3s ease-in-out;
+}
+
+#send a {
+    text-decoration: none;
+    color: darkcyan;
+}
+
+#send:hover {
+    background: ivory;
+}
+
+#send:hover a {
+    color: darkcyan;
+    font-weight: bold;
+}
+
+#cop p{
+    text-align: center;
+    padding: 1% 5% 1% 5%;
+    margin-bottom: 0;
+}
+
+
