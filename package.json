@@ -6,7 +6,8 @@
   },
   "scripts": {
     "array": "node array_exercises1/script.js",
-    "loop": "node loop_exercises/script.js"
+    "loop": "node loop_exercises/script.js",
+    "algo": "node basic_algorithm_scripting/script.js"
   },
   "author": "Ola Gruchała",
   "license": "ISC",

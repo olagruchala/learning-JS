@@ -1,5 +1,5 @@
 <!--wypisz liczby od 1 do 100-->
-
+console.log('wypisz liczby od 1 do 100'.toUpperCase())
 let i = 1;
 while (i < 101){
     console.log("i: " + i);
