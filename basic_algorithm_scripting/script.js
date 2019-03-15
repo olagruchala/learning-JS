@@ -342,5 +342,55 @@ getIndexToIns([5, 3, 20, 3], 5);
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Mutations / czy pierwszy el tablicy zawiera wszystkie litery drugiego el tablicy
+console.log('Mutations'.toUpperCase());
 
+function mutation(arr) {
+    let flag = true;
+    let firstWord = arr[0].toLowerCase();
+    let secondWord = arr[1].toLowerCase();
+    for (let i = 0 ; i < secondWord.length ; i++) {
+        if (!firstWord.includes(secondWord[i])) {
+            console.log(false);
+            flag = false;
+            return flag;
+        }
+    }
 
+    console.log(flag);
+    return flag;
+}
+
+mutation(["hello", "hel"]);
+mutation(["hello", "hey"]);
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Chunky Monkey / pogrupuj el tablicy w mniejsze tablice zgodnie z podanym rozmiarem
+console.log('Chunky Monkey'.toUpperCase());
+
+function chunkArrayInGroups(arr, size) {
+
+    // I create a new table without changing the basic one
+    let newArr = [];
+    let small = [];
+    const s = size;
+    for (let i = 0 ; i < arr.length ; i+=size) {
+        small = arr.slice(i, i+size);
+        newArr.push(small);
+        // size = size + s;
+    }
+    console.log(newArr);
+    console.log(arr);
+    return newArr;
+
+    // or... I cut out elements of the basic table
+    // let newArr = [];
+    // while (arr.length) {
+    //     newArr.push(arr.splice(0,size));
+    // }
+    // console.log(newArr);
+    // return newArr;
+}
+
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
+chunkArrayInGroups([0, 1, 2, 3, 4, 5, 6], 3);
