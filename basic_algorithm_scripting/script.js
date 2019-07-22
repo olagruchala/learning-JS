@@ -394,3 +394,33 @@ function chunkArrayInGroups(arr, size) {
 
 chunkArrayInGroups(["a", "b", "c", "d"], 2);
 chunkArrayInGroups([0, 1, 2, 3, 4, 5, 6], 3);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Napisz funkcję, która wyświetli wynik:
+// true, false, true, false,
+// true, false, true, false
+
+function truAndFalse () {
+    let arr = [];
+    for (let i = 0; i < 8; i++) {
+        arr.push(i % 2 === 0);
+    }
+    return arr;
+}
+
+console.log(truAndFalse());
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Zrób interwał, który będzie wypisywała co 100 milisekund liczby od 1 do 20.
+// Po dojściu do 20 interwał niech się przerwie.
+
+let counter = 1;
+let t = setInterval(() => {
+
+    if (counter > 20) {
+        clearInterval(t)
+    } else {
+        console.log(counter++)
+    }
+
+}, 100);
